@@ -8,7 +8,9 @@ body{
     padding: 0px;
     height: 100vh;
     width: 100%;
-    background-color: black;
+    background-image: url('../img/horror1.png');
+    background-repeat: repeat;
+    background-size: cover;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     display: grid;
@@ -60,23 +62,35 @@ section#logo-container {
 
 }
 
+
 img#logo {
-
+    
     width: 100%;
-
+    
 }
 
 section#contentContainer {
-
+    
     text-align: center;
     display: grid;
     justify-self: center;
 }
 
 h3.sub-heading{
-
-    color: #5d1a17;
+    
+    color: #b95852;
     font-size: 1.5em;
+    text-transform: uppercase;
+    text-shadow: black 0.5px 0.2px 2px;
+}
+
+section#contentContainer p {
+
+    max-width: 50ch;
+    font-size: 1em;
+    justify-self: center;
+    text-align: center;
+
 }
 
 a#submission-btn {

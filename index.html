@@ -13,7 +13,7 @@
     </div>
     <div id="mainContainer">
         <section id="logo-container">
-            <img id="logo" src="/img/logo.png" alt="logo BitWeek">
+            <img id="logo" src="./img/logo.png" alt="logo BitWeek">
         </section>
         <section id="contentContainer">
             <h3 class="sub-heading">A BitWeek 2019 está em produção!</h3>
@@ -24,7 +24,7 @@
                 de trabalho.
             </p>
             <h3 class="sub-heading">Submeta seu trabalho no BitPapers</h3>
-            <a id="submission-btn" href="#">Submeter Artigo</a>
+            <a id="submission-btn" href="https://doity.com.br/bitpapers2019">Submeter Artigo</a>
         </section>
     </div>
     <script type="text/javascript">
@@ -36,22 +36,22 @@
         
         if(bg_count == 1){
             
-            container_bg.setAttribute('style', "background-image: url('../img/bg01.jpg')"); 
+            container_bg.setAttribute('style', "background-image: url('./img/bg01.jpg')"); 
             bg_count++;
         
         } else if (bg_count == 2){
 
-            container_bg.setAttribute('style', "background-image: url('../img/bg02.jpg'); background-position: right;");
+            container_bg.setAttribute('style', "background-image: url('./img/bg02.jpg'); background-position: right;");
             bg_count++;
 
         } else if (bg_count == 3){
 
-            container_bg.setAttribute('style', "background-image: url('../img/bg03.jpg'); background-position: center;");
+            container_bg.setAttribute('style', "background-image: url('./img/bg03.jpg'); background-position: center;");
             bg_count++;
 
         } else if (bg_count == 4){
             
-            container_bg.setAttribute('style', "background-image: url('../img/bg04.jpg')");
+            container_bg.setAttribute('style', "background-image: url('./img/bg04.jpg')");
             bg_count = 1;
         }
         console.log(bg_count);
