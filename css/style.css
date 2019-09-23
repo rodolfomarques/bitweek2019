@@ -95,6 +95,7 @@ section#contentContainer p {
 
 a#submission-btn {
 
+    text-transform: uppercase;
     margin-bottom: 70px;
     border: 1px solid #5d1a17;
     border-radius: 5px;
