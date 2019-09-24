@@ -1,22 +1,25 @@
-*{
-    
-}
-
 body{
-
     margin: 0px;
     padding: 0px;
     height: 100vh;
     width: 100%;
-    background-image: url('../img/horror1.png');
-    background-repeat: repeat;
-    background-size: cover;
+    background-color: #000;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
+    color: #fff;
     display: grid;
     grid-template-columns: 1fr minmax(280px, 2fr) 1fr;
+    overflow-x: hidden;
+    font-size: 18px;
 }
-
+#fadeIn {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    z-index: 99;
+}
 div#mainContainer-bg {
 
     width: 100%;
@@ -62,48 +65,37 @@ section#logo-container {
 
 }
 
-
 img#logo {
-    
+
     width: 100%;
-    
+
 }
 
 section#contentContainer {
-    
+
     text-align: center;
     display: grid;
     justify-self: center;
 }
 
 h3.sub-heading{
-    
-    color: #b95852;
+    color: #7a231e;
     font-size: 1.5em;
-    text-transform: uppercase;
-    text-shadow: black 0.5px 0.2px 2px;
-}
-
-section#contentContainer p {
-
-    max-width: 50ch;
-    font-size: 1em;
-    justify-self: center;
-    text-align: center;
-
 }
 
 a#submission-btn {
-
-    text-transform: uppercase;
     margin-bottom: 70px;
-    border: 1px solid #5d1a17;
+    font-weight: bold;
+    border: 1px solid #7a231e;
     border-radius: 5px;
-    background-color: #5d1a17;
+    background-color: #7a231e;
     color: whitesmoke;
     text-decoration: none;
     width: 200px;
     padding: 10px 0px;
     justify-self: center;
-    
+}
+#submission-btn:hover {
+    background-color: #cc3a32;
+    transition: 0.5s ease-in-out;
 }
