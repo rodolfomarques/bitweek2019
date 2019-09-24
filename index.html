@@ -4,65 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BitWeek</title>
+    <link rel="shortcut icon" href="img/logo.png">
+    <title>BitWeek 2019</title>
+    <meta name="description" content="A Bit.week é um evento organizado pelos alunos de Comunicação em Mídias Digitais da UFPB que tem como objetivo apresentar o potencial das novas mídias na comunicação e suas aplicações no mercado de trabalho.">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <div id="mainContainer-bg">
-        <!-- Container para o BG-->
-    </div>
-    <div id="mainContainer">
-        <section id="logo-container">
-            <img id="logo" src="./img/logo.png" alt="logo BitWeek">
-        </section>
-        <section id="contentContainer">
-            <h3 class="sub-heading">A BitWeek 2019 está em produção!</h3>
-            <p>Bit.week é um evento organizado pelos alunos de 
-                Comunicação em Mídias Digitais – UFPB que tem 
-                como objetivo apresentar o potencial das novas 
-                mídias na comunicação e suas aplicações no mercado 
-                de trabalho.
-            </p>
-            <h3 class="sub-heading">Submeta seu trabalho no BitPapers</h3>
-            <a id="submission-btn" href="https://doity.com.br/bitpapers2019">Submeter Artigo</a>
-        </section>
-    </div>
-    <script type="text/javascript">
-    
-    var bg_count = 1;
-    var container_bg = document.getElementById('mainContainer-bg');
-
-    function changeBG(){ 
-        
-        if(bg_count == 1){
-            
-            container_bg.setAttribute('style', "background-image: url('./img/bg01.jpg')"); 
-            bg_count++;
-        
-        } else if (bg_count == 2){
-
-            container_bg.setAttribute('style', "background-image: url('./img/bg02.jpg'); background-position: right;");
-            bg_count++;
-
-        } else if (bg_count == 3){
-
-            container_bg.setAttribute('style', "background-image: url('./img/bg03.jpg'); background-position: center;");
-            bg_count++;
-
-        } else if (bg_count == 4){
-            
-            container_bg.setAttribute('style', "background-image: url('./img/bg04.jpg')");
-            bg_count = 1;
-        }
-        console.log(bg_count);
-    }
-
-    setTimeout(()=>{
-    
-        setInterval(()=> {console.log("1234"); changeBG();}, 10000);
-
-    },4000)
-
-    </script>
-</body>
+    <body>
+        <div id="fadeIn">
+        </div>
+        <div id="mainContainer-bg">
+            <!-- Container para o BG-->
+        </div>
+        <div id="mainContainer">
+            <section id="logo-container">
+                <img id="logo" src="img/logo.png" alt="logo BitWeek">
+            </section>
+            <section id="contentContainer">
+                <h3 class="sub-heading">A BitWeek 2019 está em produção...</h3>
+                <p>A Bit.week é um evento organizado pelos alunos do curso de 
+                    Comunicação em Mídias Digitais da UFPB, que tem 
+                    como objetivo apresentar o potencial das novas 
+                    mídias na comunicação e suas aplicações no mercado 
+                    de trabalho.
+                </p>
+                <h3 class="sub-heading">Submeta seu trabalho no BitPapers!</h3>
+                <a id="submission-btn" href="https://doity.com.br/bitpapers2019">Submeter Artigo</a>
+            </section>
+        </div>
+    </body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
 </html>
